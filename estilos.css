@@ -1,0 +1,138 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial;
+background:#e0e0e0;
+}
+
+.contenedor{
+width:90%;
+max-width:1000px;
+margin:40px auto 100px auto;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:40px;
+}
+
+.pelicula{
+text-align:center;
+}
+
+.poster{
+width:100%;
+border-radius:10px;
+}
+
+.titulo{
+font-size:16px;
+margin-top:10px;
+}
+
+.paginacion{
+position:fixed;
+bottom:0;
+width:100%;
+background:#100a1f;
+display:flex;
+justify-content:center;
+gap:20px;
+padding:10px;
+}
+
+.paginacion button{
+height:50px;
+width:200px;
+border:none;
+background:#241744;
+color:white;
+border-radius:100px;
+cursor:pointer;
+}
+
+.detalle{
+width:80%;
+margin:40px auto;
+text-align:center;
+}
+
+.detalle img{
+width:300px;
+border-radius:10px;
+}
+
+.hero{
+    min-height:100vh;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.8)
+    );
+}
+
+.tarjeta{
+    position:relative;
+    display:flex;
+    gap:40px;
+    background:rgba(0,0,0,0.75);
+    backdrop-filter: blur(10px);
+    padding:40px;
+    border-radius:15px;
+    max-width:900px;
+    color:white;
+}
+
+.poster{
+    width:250px;
+    border-radius:10px;
+}
+
+.info{
+    max-width:500px;
+}
+
+.info h1{
+    margin-bottom:15px;
+}
+
+.rating{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.fecha{
+    margin-bottom:20px;
+}
+
+.descripcion{
+    line-height:1.6;
+}
+
+.volver{
+    display:inline-block;
+    margin-top:25px;
+    background:#e50914;
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    color:white;
+}
